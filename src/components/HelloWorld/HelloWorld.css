@@ -1,9 +1,10 @@
 .root {
   extends: box from "styles/layout.css";
-  border-color: red;
+  border-color: var(--red);
 }
 
 .text {
   extends: heading from "styles/typography.css";
-  color: $yellow;
+  color: var(--red);
+  font-family: var(--font);
 }

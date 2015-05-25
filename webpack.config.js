@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var ReactToHtmlPlugin = require('react-to-html-webpack-plugin');
 var customProperties = require('postcss-custom-properties');
-var vars = require('postcss-simple-vars');
+var _ = require('lodash');
 
 var path = require('path');
 var ejs = require('ejs');
@@ -25,10 +25,9 @@ module.exports = {
   },
 
   postcss: [
-    vars({
-      variables: function () {
-        return require('./config/colors');
-      }
+    customProperties({
+      preserve: 'computed',
+      variables: _.extend({}, require('./config/colors'), require('./config/typography')),
     })
   ],
 

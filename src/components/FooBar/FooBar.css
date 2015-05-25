@@ -1,9 +1,9 @@
 .root {
   extends: box from "styles/layout.css";
-  border-color: blue;
+  border-color: var(--blue);
 }
 
 .text {
   extends: heading from "styles/typography.css";
-  color: blue;
+  color: var(--blue);
 }
