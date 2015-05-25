@@ -1,5 +1,3 @@
-@import url('styles/colors.css');
-
 .root {
   extends: box from "styles/layout.css";
   border-color: red;
@@ -7,5 +5,5 @@
 
 .text {
   extends: heading from "styles/typography.css";
-  color: var(--brand);
+  color: $yellow;
 }

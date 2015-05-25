@@ -24,12 +24,13 @@
     "ejs": "^2.3.1",
     "extract-text-webpack-plugin": "^0.8.0",
     "node-libs-browser": "^0.5.0",
+    "postcss-custom-properties": "*.*.*",
+    "postcss-loader": "~0.3.0",
+    "postcss-simple-vars": "^0.3.0",
     "react": "^0.13.3",
     "react-to-html-webpack-plugin": "^2.1.0",
     "style-loader": "^0.12.2",
     "webpack": "^1.9.8",
-    "webpack-dev-server": "^1.8.2",
-    "postcss-loader": "~0.3.0",
-    "postcss-custom-properties": "*.*.*"
+    "webpack-dev-server": "^1.8.2"
   }
 }
